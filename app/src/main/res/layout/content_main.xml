@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aldo.empresa.aboutaldo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="24dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/biography" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="8dp"
+                android:id="@+id/areaTv"
+                android:text="Area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/yearsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Años"/>
+
+            <TextView
+                android:padding="8dp"
+                android:layout_below="@+id/areaTv"
+                android:text="Android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/yearsTv"
+                android:text="Android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

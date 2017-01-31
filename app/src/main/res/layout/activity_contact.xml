@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="aldo.empresa.aboutaldo.ContactActivity">
+
+
+    <TextView
+        android:id="@+id/linkTv"
+        style="@style/ContactTv"
+        android:drawableLeft="@mipmap/ic_linkedin_black_24dp"
+        android:text="Linkedin" />
+
+    <TextView
+        android:id="@+id/callTv"
+        style="@style/ContactTv"
+        android:drawableLeft="@mipmap/ic_call_black_24dp"
+        android:text="Telefono" />
+
+
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="aldo.empresa.aboutaldo.EmailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_email" />
+
+
+</LinearLayout>

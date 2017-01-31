@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="aldo.empresa.aboutaldo.EmailFragment">
+
+    <Button
+        android:id="@+id/contactBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_email_white_24dp"
+        android:text="Contactame"
+        android:textColor="@android:color/white"
+        android:theme="@style/AccentButton" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/msgWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Su mensaje"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/msgEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_send_white_24dp"
+        android:text="Enviar"
+        android:textColor="@android:color/white"
+        android:theme="@style/AccentButton" />
+</LinearLayout>
